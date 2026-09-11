@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p class="intro">We'd love to hear from you. Send us a message!</p>
+
+        <form action="https://example.com/contact" method="post" class="contact-form">
+            <!-- Full Name -->
+            <div class="form-group">
+                <label for="fullname">Full Name <span class="required">*</span></label>
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    required
+                    aria-required="true"
+                >
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email <span class="required">*</span></label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    aria-required="true"
+                >
+            </div>
+
+            <!-- Subject -->
+            <div class="form-group">
+                <label for="subject">Subject <span class="required">*</span></label>
+                <select id="subject" name="subject" required aria-required="true">
+                    <option value="">-- Select a subject --</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+                <label for="message">Message <span class="required">*</span></label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    minlength="10"
+                    required
+                    aria-required="true"
+                ></textarea>
+            </div>
+
+            <!-- How did you hear about us -->
+            <fieldset class="form-group">
+                <legend>How did you hear about us? <span class="required">*</span></legend>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input
+                            type="radio"
+                            id="heard-search"
+                            name="heard-about"
+                            value="search"
+                            required
+                        >
+                        <label for="heard-search">Search Engine</label>
+                    </div>
+                    <div class="radio-item">
+                        <input
+                            type="radio"
+                            id="heard-social"
+                            name="heard-about"
+                            value="social"
+                            required
+                        >
+                        <label for="heard-social">Social Media</label>
+                    </div>
+                    <div class="radio-item">
+                        <input
+                            type="radio"
+                            id="heard-referral"
+                            name="heard-about"
+                            value="referral"
+                            required
+                        >
+                        <label for="heard-referral">Friend Referral</label>
+                    </div>
+                    <div class="radio-item">
+                        <input
+                            type="radio"
+                            id="heard-other"
+                            name="heard-about"
+                            value="other"
+                            required
+                        >
+                        <label for="heard-other">Other</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Newsletter -->
+            <div class="form-group checkbox">
+                <input
+                    type="checkbox"
+                    id="newsletter"
+                    name="newsletter"
+                    value="yes"
+                >
+                <label for="newsletter">Subscribe to our newsletter</label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
