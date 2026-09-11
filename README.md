@@ -52,5 +52,6 @@ cd roadmap-contact-form
 
 - [Live Demo](https://maisondev.github.io/roadmap-contact-form/)
 - [GitHub Repository](https://github.com/maisondev/roadmap-contact-form)
-- [Roadmap.sh - Contact Form](https://roadmap.sh/packs/html/contact-form)
+- [Roadmap.sh Project](https://roadmap.sh/projects/contact-form)
+- [Roadmap.sh - HTML Fundamentals Pack](https://roadmap.sh/packs/html/contact-form)
 - [HTML Forms - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
