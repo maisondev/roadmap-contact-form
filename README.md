@@ -1,6 +1,6 @@
 # Contact Form
 
-Um formulário de contato HTML acessível e responsivo, construído conforme os requisitos do [roadmap.sh](https://roadmap.sh/packs/html/contact-form).
+Um formulário de contato HTML acessível, construído conforme os requisitos do [roadmap.sh](https://roadmap.sh/packs/html/contact-form).
 
 ## 🎯 Requisitos Implementados
 
@@ -10,7 +10,7 @@ Um formulário de contato HTML acessível e responsivo, construído conforme os 
 - ✅ Campos obrigatórios:
   - **Full Name** (texto, obrigatório)
   - **Email** (email, obrigatório)
-  - **Subject** (select com 4 opções)
+  - **Subject** (select com 3 opções)
   - **Message** (textarea, obrigatório, minlength=10)
   - **How did you hear about us?** (radio buttons agrupados em fieldset com legend)
 - ✅ Campo opcional:
@@ -23,20 +23,13 @@ Um formulário de contato HTML acessível e responsivo, construído conforme os 
 - ✅ Acessibilidade:
   - Labels associados via `for` attribute
   - Radio buttons agrupados com `<fieldset>` e `<legend>`
-  - `aria-required` nos campos obrigatórios
-
-## 🎨 Design
-
-- Design responsivo e moderno
-- Gradiente roxo como background
-- Validação visual com cores e sombras
-- Compatível com navegadores modernos
+  - `required` nos campos obrigatórios
 
 ## 🚀 Como usar
 
 1. Clone o repositório:
 ```bash
-git clone <repository-url>
+git clone https://github.com/maisondev/roadmap-contact-form.git
 cd roadmap-contact-form
 ```
 
@@ -55,14 +48,9 @@ cd roadmap-contact-form
 - [ ] Submit button tem `type="submit"`
 - [ ] Abra DevTools → Network tab → Preserve log → Submit para ver dados sendo enviados
 
-## 📱 Responsividade
-
-O formulário é completamente responsivo e funciona perfeitamente em:
-- Desktop
-- Tablet
-- Mobile
-
 ## 🔗 Links
 
+- [Live Demo](https://maisondev.github.io/roadmap-contact-form/)
+- [GitHub Repository](https://github.com/maisondev/roadmap-contact-form)
 - [Roadmap.sh - Contact Form](https://roadmap.sh/packs/html/contact-form)
 - [HTML Forms - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
